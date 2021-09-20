@@ -1,0 +1,101 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+/* Home */
+#Home{
+    left: 0;
+    top: 0;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    background-image: url("https://res.cloudinary.com/di449masi/image/upload/v1632162099/IMG_3273_bncqfm.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 5rem;
+}
+
+
+/* Navigation */
+.nav {
+    display: inline-flex;
+    position: fixed; /* Set the navbar to fixed position */
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: black;
+}
+@media only screen and (min-width: 768px) {
+    .mobile{
+        display: none;
+    }
+    .tablet-view {
+        list-style: none;
+        position: absolute;
+        left: 40%;
+        display:inline-flex
+    }
+    .tablet-view li {
+        display: inline-flex;
+        color:white;
+        text-shadow: 2px 2px blue;
+        padding: 15px;
+        margin: 5px;
+        right:0;
+    }
+    .tablet-view li:hover {
+        background-color: white;
+        color:black;
+        text-shadow: none;
+        cursor: pointer
+    }
+}
+@media only screen and (min-width: 992px) {
+    .tablet-view {
+        left: 53%;
+    }
+}
+.mobile{
+    background-color: black;
+    width:100%;
+  }
+.mobile-icon{
+    position: absolute;
+    left:80%;
+    top:20%;
+    cursor: pointer
+}
+.mobile-icon-bar {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+  }
+  .mobile-view{
+      color:white;
+      list-style: none;
+      margin-top: 20px;
+      position: absolute;
+      background-color: black;
+      display: none;
+      width: 100%;
+      top:65px;
+      left: -40px;
+  }
+.mobile-view li {
+    text-align: center;
+    padding: 15px;
+    text-shadow: 2px 2px blue;
+    border-bottom: solid 0.5px blue;
+}
+.mobile-view li:hover {
+    text-shadow:none;
+    cursor: pointer;
+    background-color: white;
+    color:blue
+}
