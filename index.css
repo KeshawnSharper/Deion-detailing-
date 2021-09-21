@@ -99,3 +99,34 @@ html,body{
     background-color: white;
     color:blue
 }
+
+/* Welcome Content  */
+
+.welcome-content{
+    position: absolute;
+    text-align: center;
+    top:40%;
+    left:10%;
+}
+.welcome-content h2 {
+    color: white;
+    text-shadow: 2px 2px blue;
+    text-align: center;
+    justify-items: center;
+}
+.welcome-content button{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border: solid 0.5px blue;
+    cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+    .welcome-content{
+        position: absolute;
+        text-align: center;
+        justify-items: center;
+        left:25%;
+        top:40%;
+    }
+}
